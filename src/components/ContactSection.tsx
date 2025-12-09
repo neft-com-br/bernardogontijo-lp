@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, MessageCircle } from 'lucide-react';
+import { Mail, Linkedin, Github, MessageCircle, Twitter } from 'lucide-react';
 
 const ContactSection = () => {
   const contactMethods = [
@@ -24,6 +24,13 @@ const ContactSection = () => {
       value: "@bernardogontijo",
       href: "https://github.com/bernardogontijo",
       color: "hover:bg-gray-700"
+    },
+    {
+      icon: <Twitter className="w-6 h-6" />,
+      title: "Twitter/X",
+      value: "@rtcbernardo",
+      href: "https://x.com/rtcbernardo",
+      color: "hover:bg-gray-900"
     },
     {
       icon: <MessageCircle className="w-6 h-6" />,
@@ -52,7 +59,7 @@ const ContactSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
           {contactMethods.map((method, index) => (
             <motion.a
               key={index}

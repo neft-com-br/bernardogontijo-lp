@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Linkedin, Mail, Github } from 'lucide-react';
+import { ArrowDown, Linkedin, Mail, Github, Twitter } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -79,6 +79,14 @@ const HeroSection = () => {
                 className="w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors"
               >
                 <Github className="w-5 h-5 text-white" />
+              </a>
+              <a
+                href="https://x.com/rtcbernardo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-900 flex items-center justify-center transition-colors"
+              >
+                <Twitter className="w-5 h-5 text-white" />
               </a>
               <a
                 href="mailto:bernardo@neft.com.br"
