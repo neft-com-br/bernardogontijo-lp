@@ -1,0 +1,131 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  AWS_REGION: sa-east-1
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.npm
+            node_modules
+          key: v1-dependencies-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            v1-dependencies-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js static site
+        run: npm run build
+
+      - name: Cache build
+        uses: actions/cache@v3
+        with:
+          path: out
+          key: v1-build-${{ github.sha }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Restore cache build
+        uses: actions/cache@v3
+        with:
+          path: out
+          key: v1-build-${{ github.sha }}
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: sa-east-1
+
+      - name: Setting Signature Version 4 for S3 Request Authentication
+        run: aws configure set default.s3.signature_version s3v4
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync out/ s3://bernardogontijo-lp --delete --acl public-read \
+            --exclude "*" \
+            --include "*.html" --content-type "text/html; charset=utf-8" \
+            --cache-control "max-age=0,no-cache,no-store,must-revalidate"
+          aws s3 sync out/ s3://bernardogontijo-lp --delete --acl public-read \
+            --exclude "*.html" \
+            --exclude "*" \
+            --include "*.css" --content-type "text/css; charset=utf-8"
+          aws s3 sync out/ s3://bernardogontijo-lp --delete --acl public-read \
+            --exclude "*.html" \
+            --exclude "*.css" \
+            --exclude "*" \
+            --include "*.js" --content-type "application/javascript; charset=utf-8"
+          aws s3 sync out/ s3://bernardogontijo-lp --delete --acl public-read \
+            --exclude "*.html" \
+            --exclude "*.css" \
+            --exclude "*.js" \
+            --exclude "*" \
+            --include "*.json" --content-type "application/json; charset=utf-8"
+          aws s3 sync out/ s3://bernardogontijo-lp --delete --acl public-read \
+            --exclude "*.html" \
+            --exclude "*.css" \
+            --exclude "*.js" \
+            --exclude "*.json" \
+            --exclude "*" \
+            --include "*.png" --content-type "image/png"
+          aws s3 sync out/ s3://bernardogontijo-lp --delete --acl public-read \
+            --exclude "*.html" \
+            --exclude "*.css" \
+            --exclude "*.js" \
+            --exclude "*.json" \
+            --exclude "*.png" \
+            --exclude "*" \
+            --include "*.jpg" --content-type "image/jpeg"
+          aws s3 sync out/ s3://bernardogontijo-lp --delete --acl public-read \
+            --exclude "*.html" \
+            --exclude "*.css" \
+            --exclude "*.js" \
+            --exclude "*.json" \
+            --exclude "*.png" \
+            --exclude "*.jpg" \
+            --exclude "*" \
+            --include "*.svg" --content-type "image/svg+xml"
+          aws s3 sync out/ s3://bernardogontijo-lp --delete --acl public-read \
+            --exclude "*.html" \
+            --exclude "*.css" \
+            --exclude "*.js" \
+            --exclude "*.json" \
+            --exclude "*.png" \
+            --exclude "*.jpg" \
+            --exclude "*.svg"
+
+      - name: Activate CloudFront
+        run: |
+          aws configure set preview.cloudfront true
+          aws configure set preview.create-invalidation true
+
+      - name: CloudFront create invalidation
+        run: |
+          aws cloudfront create-invalidation --distribution-id E3LK6ADE4SWVLF --paths "/*"

@@ -1,0 +1,10 @@
+# robots.txt para videochamada.com.br
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://videochamada.com.br/sitemap.xml
+
+# Crawl-delay (opcional, para evitar sobrecarga)
+Crawl-delay: 1

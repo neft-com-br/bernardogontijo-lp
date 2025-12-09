@@ -1,0 +1,89 @@
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <header
+      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'bg-dark-bg/90 backdrop-blur-md shadow-md py-3'
+          : 'bg-transparent py-5'
+      }`}
+    >
+      <div className="container mx-auto px-6 flex justify-between items-center">
+        <Link href="/" className="flex items-center space-x-2">
+          <span className="text-2xl font-bold text-white">Bernardo Gontijo</span>
+        </Link>
+
+        {/* Mobile menu button */}
+        <div className="flex items-center space-x-4 md:hidden">
+          <button
+            className="text-gray-300 focus:outline-none"
+            onClick={toggleMenu}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center space-x-6">
+          <Link href="/" className="text-gray-300 hover:text-primary transition-colors">
+            Home
+          </Link>
+          <Link href="/sobre" className="text-gray-300 hover:text-primary transition-colors">
+            Sobre
+          </Link>
+        </nav>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-dark-bg border-t border-gray-800 animate-fade-in">
+          <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+            <Link
+              href="/"
+              className="text-gray-300 hover:text-primary py-2 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              href="/sobre"
+              className="text-gray-300 hover:text-primary py-2 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Sobre
+            </Link>
+          </div>
+        </div>
+      )}
+    </header>
+  );
+};
+
+export default Header;

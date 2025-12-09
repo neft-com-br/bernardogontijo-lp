@@ -1,0 +1,696 @@
+# videochamada.com.br - Estrutura e Conteúdo do Site
+
+## Sobre o Projeto
+API de videochamadas profissional para empresas, com 2.000 minutos grátis por mês.
+CNPJ: 35.211.047/0001-23
+Contato: WhatsApp +55 31 7215-6350
+Site: https://videochamada.com.br
+Documentação: https://documentacao.videochamada.com.br
+Aplicação: https://app.videochamada.com.br
+
+---
+
+## Hero Section - Página Principal
+
+### Título Principal
+Videochamada [profissional | segura | personalizada | acessível | com IA] para seu negócio
+
+### Descrição
+Nossa API oferece 2.000 minutos grátis por mês e precificação justa, sem assinaturas fixas.
+Chegou a hora de tornar suas chamadas de vídeo mais profissionais, seguras e com a sua marca.
+
+### CTAs
+- Criar minha conta: https://app.videochamada.com.br/cadastrar
+- Entrar em contato: WhatsApp +55 31 7215-6350 (https://api.whatsapp.com/send?phone=5531972156350&text=Olá!%20Preciso%20de%20ajuda)
+
+---
+
+## Por que escolher a nossa ferramenta?
+
+Nossa plataforma é projetada especificamente para atender seus clientes por videochamada,
+oferecendo uma solução completa e personalizada que vai além das ferramentas genéricas de videoconferência.
+
+### Recursos Principais
+
+#### 1. Preços Justos
+2.000 minutos grátis/mês, depois R$ 0,015/minuto, sem contratos ou assinaturas obrigatórias.
+
+#### 2. Tecnologia Brasileira
+WebRTC próprio, servidores no Brasil, suporte em português via WhatsApp.
+
+#### 3. Integração Flexível
+API simples ou integração no-code com Zapier/Make para implementação rápida.
+
+#### 4. Personalização Whitelabel
+Cores, logos e recursos sob medida para manter a identidade da sua marca.
+
+#### 5. Segurança de Alto Nível
+Criptografia AES-256, conformidade com LGPD, HIPAA, ISO e GDPR.
+
+#### 6. Transparência Total
+Saiba exatamente quem acessou cada link, quando entrou e por quanto tempo ficou.
+Histórico completo e exportável de todas as chamadas.
+
+**Importante:** Suporte para até 4 participantes por chamada, ideal para atendimentos empresa-cliente.
+
+---
+
+## Cases de Sucesso
+
+### 1. Companhia Riograndense de Saneamento (CORSAN)
+**Uso:** Atendimento ao cidadão com videochamada
+
+"A videochamada recebeu destaque nacional no Prêmio Nacional da Qualidade em Saneamento (PNQS). O case da videochamada foi classificado como prática inovadora em gestão do saneamento pela Associação Brasileira de Engenharia Sanitária e Ambiental (Abes), e fomos selecionados para apresentar o projeto no Seminário anual do PNQS, que ocorreu no final de 2022. Além dos feedbacks positivos dos usuários, esse tipo de reconhecimento nos dá confiança para continuarmos a buscar soluções que melhorem ainda mais a experiência dos nossos clientes."
+
+### 2. Psicomanager
+**Uso:** Sistema para psicólogos
+
+O Psicomanager utiliza nossa tecnologia de videochamadas para disponibilizar aos seus assinantes uma sala virtual segura, integrada ao seu sistema de gestão para psicólogos, assegurando profissionalismo e comodidade para os pacientes.
+
+### 3. Cadclin
+**Uso:** Sistema para clínicas médicas
+
+Há mais de 35 anos fornecendo soluções para clínicas médicas, o Cadclin adotou a solução de videochamadas para integrá-la ao seu sistema, possibilitando que os médicos atendam seus pacientes com total segurança.
+
+### 4. Fábrica de Provas
+**Uso:** Monitoramento de Exames
+
+Nossa empresa desenvolveu uma ferramenta de proctoring avançada, desenhada para integrar-se perfeitamente com a plataforma da Fábrica de Provas. Esta solução inovadora permite que os aplicadores monitorem os alunos em tempo real durante as provas, utilizando tecnologia de ponta para detectar e prevenir tentativas de fraude.
+
+---
+
+## Recursos Poderosos
+
+Nossa plataforma oferece uma ampla gama de funcionalidades projetadas para tornar suas videochamadas
+mais produtivas, profissionais e personalizadas.
+
+### Funcionalidades Principais
+
+#### 1. Gravação de Chamadas
+Grave suas videochamadas com um clique e armazene-as com segurança para referência futura.
+[Saiba mais: /funcionalidades/gravacao]
+
+#### 2. Transcrição com IA
+Converta automaticamente o áudio das suas chamadas em texto pesquisável com nossa tecnologia de IA.
+[Saiba mais: /funcionalidades/transcricao]
+
+#### 3. Resumo Inteligente
+Obtenha resumos concisos das suas reuniões gerados por IA, destacando os pontos principais.
+[Saiba mais: /funcionalidades/resumo-inteligente]
+
+#### 4. Segurança Avançada
+Proteja suas comunicações com criptografia de ponta a ponta e conformidade com LGPD e HIPAA.
+[Saiba mais: /funcionalidades/seguranca-avancada]
+
+### Recursos Adicionais
+
+#### Chat Integrado
+Comunique-se por texto durante as chamadas com nosso chat integrado, com histórico completo.
+
+#### Pré-checagem de Hardware
+Verifique câmera, microfone e conexão antes de iniciar a chamada para garantir qualidade.
+
+#### Personalização Completa
+Adapte a interface com as cores, logo e elementos da sua marca para uma experiência whitelabel.
+
+#### Compartilhamento de Tela
+Compartilhe sua tela ou aplicativos específicos durante as chamadas para colaboração eficiente.
+
+---
+
+## Como Funciona?
+
+Implementar videochamadas profissionais nunca foi tão simples.
+
+### Passo 1: Criação de Conta Grátis
+Clique em 'Crie Minha Conta' e use 2.000 minutos sem custo.
+
+### Passo 2: Integração Fácil
+Conecte via Zapier/Make ou API com exemplos práticos.
+
+### Passo 3: Personalize
+Adapte à sua marca com recursos como chat e gravação.
+
+### Passo 4: Ofereça Qualidade
+Até 4 participantes com pré-checagem de hardware.
+
+### Passo 5: Pague Pelo Uso
+R$ 0,015/minuto após os grátis, sem surpresas.
+
+---
+
+## Conheça Nossos Planos
+
+Aqui, você sabe exatamente o que está pagando. Sem assinaturas obrigatórias, sem taxas ocultas.
+
+### Plano Free
+
+**2.000 minutos grátis por mês**
+
+Recursos incluídos:
+- 2.000 minutos grátis por mês
+- Pré-checagem de hardware
+- Até 4 participantes por chamada
+- Integração Zapier/Make/API
+- Personalização whitelabel
+
+**CTA:** Teste Grátis - https://app.videochamada.com.br/cadastrar
+
+### Plano Pay-as-you-go
+
+**R$ 0,015 por minuto por participante**
+
+Recursos incluídos:
+- Todos os recursos do plano Free
+- R$ 0,015/minuto/participante após os grátis
+- Suporte prioritário
+- Gerente de contas dedicado
+
+**CTA:** Saiba Mais - WhatsApp +55 31 7215-6350 (https://api.whatsapp.com/send?phone=5531972156350&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20plano%20pay-as-you-go)
+
+### Recursos Adicionais
+
+| Recurso | Preço |
+|---------|-------|
+| Gravação | R$ 0,075/minuto |
+| Armazenamento | R$ 0,015/minuto |
+| Transcrição | R$ 0,0225/minuto |
+| Resumo baseado em prompt | R$ 0,020/minuto |
+
+### Planos Customizados
+
+Para empresas com necessidades específicas, oferecemos planos personalizados.
+Entre em contato conosco para discutir suas necessidades.
+
+**CTA:** Fale Conosco - WhatsApp +55 31 7215-6350 (https://api.whatsapp.com/send?phone=5531972156350&text=Olá!%20Gostaria%20de%20conhecer%20melhor%20as%20soluções)
+
+---
+
+## Integrações Flexíveis
+
+Múltiplas formas de integrar videochamadas ao seu produto ou serviço,
+desde soluções no-code até nossa API completa.
+
+### Zapier
+Conecte videochamadas com mais de 5.000 aplicativos sem escrever uma linha de código.
+Ideal para automações e fluxos de trabalho.
+
+**Link:** https://zapier.com/apps/videochamada/integrations
+
+### Make (Integromat)
+Crie fluxos de trabalho visuais complexos com videochamadas e outras ferramentas.
+Perfeito para automações avançadas.
+
+**Link:** https://www.make.com/en/integrations/videochamada
+
+### API REST
+Integração direta via API REST para máxima flexibilidade e controle.
+Documentação completa e exemplos disponíveis.
+
+**Link:** https://documentacao.videochamada.com.br
+
+### Exemplos de Código
+
+#### Node.js
+```javascript
+const axios = require('axios');
+
+const url = 'https://api.videochamada.com.br/calls';
+const headers = {
+  Authorization: 'Bearer {API_TOKEN}',
+  'Content-Type': 'application/json'
+};
+const data = {};
+
+axios.post(url, data, { headers })
+  .then(response => console.log(response.data))
+  .catch(error => console.error(error));
+```
+
+#### Python
+```python
+import requests
+
+url = "https://api.videochamada.com.br/calls"
+headers = {
+    "Authorization": "Bearer {API_TOKEN}",
+    "Content-Type": "application/json"
+}
+data = {}
+
+response = requests.post(url, headers=headers, json=data)
+print(response.json())
+```
+
+#### HTML (Embed)
+```html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videochamada</title>
+</head>
+<body>
+    <iframe
+        src="https://SUAEMPRESA.videochamada.com.br/chamada/ID_DA_CHAMADA"
+        allow="camera; microphone; fullscreen"
+        style="width: 100%; height: 600px; border: none; border-radius: 8px;"
+    ></iframe>
+</body>
+</html>
+```
+
+---
+
+## Perguntas Frequentes (FAQ)
+
+### Preciso pagar assinatura para usar a API de videochamadas?
+Não, oferecemos 2.000 minutos grátis por mês e depois disso você paga apenas pelo que usar (R$ 0,015/minuto/participante). Não há assinaturas obrigatórias ou contratos de longo prazo.
+
+### Quantos participantes podem estar em uma videochamada?
+Nossa plataforma suporta até 4 participantes por chamada, sendo ideal para atendimentos empresa-cliente, consultas médicas, terapias e outros cenários de atendimento personalizado.
+
+### Como posso integrar as videochamadas ao meu sistema?
+Oferecemos múltiplas opções de integração: via API REST (api.videochamada.com.br/calls) com exemplos em Node.js e Python, ou através de ferramentas no-code como Zapier e Make (Integromat).
+
+### É possível personalizar a interface da videochamada com minha marca?
+Sim, oferecemos personalização whitelabel completa. Você pode adicionar seu logo, cores da sua marca e personalizar recursos como chat e gravação para manter a identidade visual da sua empresa.
+
+### A plataforma é segura para uso em contextos que exigem confidencialidade?
+Sim, nossa plataforma utiliza criptografia AES-256 e está em conformidade com LGPD, HIPAA, ISO e GDPR. Nossos servidores estão localizados no Brasil, o que garante maior segurança e menor latência.
+
+### Como funciona a cobrança pelos recursos adicionais como gravação?
+Os recursos adicionais são cobrados separadamente: Gravação (R$ 0,075/minuto), Armazenamento (R$ 0,015/minuto), Transcrição (R$ 0,0225/minuto) e Resumo baseado em prompt (R$ 0,020/minuto).
+
+### Vocês oferecem suporte técnico?
+Sim, oferecemos suporte técnico em português via WhatsApp. Clientes do plano pay-as-you-go têm acesso a suporte prioritário e um gerente de contas dedicado.
+
+### Posso testar a plataforma antes de decidir?
+Sim, você pode criar uma conta gratuita e utilizar os 2.000 minutos mensais sem nenhum custo ou compromisso. Não é necessário fornecer dados de cartão de crédito para começar.
+
+---
+
+## Ferramenta para Videoatendimento - NEFT
+
+Procurando uma ferramenta mais completa para videoatendimento?
+
+Gerencie equipes, receba agendamentos online, personalize horários de atendimento,
+obtenha relatórios precisos com a realização de atendimentos seguros, eficientes e acessíveis.
+
+**Conheça a Neft:** https://neft.com.br
+
+---
+
+## FUNCIONALIDADE DETALHADA: Gravação de Chamadas
+
+### Visão Geral
+Capture momentos importantes com dois tipos de gravação: Composite (todos em um vídeo)
+ou Individual (um vídeo por participante). Escolha o período de armazenamento ideal
+para suas necessidades, de 1 a 48 meses.
+
+### Benefícios da Gravação
+
+#### Segurança Total
+Gravações criptografadas e armazenadas com segurança em conformidade com LGPD e HIPAA.
+
+#### Controle de Retenção
+Defina por quanto tempo as gravações ficam disponíveis, de acordo com suas políticas.
+
+#### Download Fácil
+Baixe as gravações em formato MP4 para armazenamento local ou compartilhamento.
+
+#### Gravação Transparente
+Sem participantes adicionais ou robôs na chamada, garantindo privacidade e conforto para assuntos sigilosos.
+
+### Como Funciona - Gravação Automática e Transparente
+
+#### 1. Configuração Simples
+A gravação é configurada nas preferências do projeto da videochamada.
+Quando ativada, ela ocorre automaticamente quando a chamada é iniciada.
+
+#### 2. Sem Participantes Adicionais
+Diferente de outras ferramentas que adicionam "robôs" ou participantes extras
+para realizar a gravação, nossa solução é completamente transparente e não
+interfere na experiência da chamada.
+
+#### 3. Acesso Seguro às Gravações
+Após a chamada, as gravações ficam disponíveis no painel de controle para
+visualização, download ou compartilhamento seguro, com controle total sobre
+quem pode acessá-las.
+
+### Casos de Uso
+
+#### Telemedicina
+Médicos podem gravar consultas para referência futura, documentação
+e para compartilhar com outros profissionais de saúde quando necessário.
+
+#### Reuniões Corporativas
+Capture decisões importantes, brainstormings e apresentações para que todos
+os membros da equipe possam revisitar o conteúdo posteriormente.
+
+#### Educação Online
+Professores podem gravar aulas para disponibilizar aos alunos que não puderam
+participar ao vivo ou para revisão antes de provas.
+
+### Preços - Gravação
+
+| Item | Preço |
+|------|-------|
+| Gravação Composite (todos em 1 vídeo) | R$ 0,075 por minuto |
+| Gravação Individual (1 por participante) | R$ 0,035 por minuto por participante |
+| Armazenamento (escolha de 1 a 48 meses) | R$ 0,010 por minuto/mês |
+| Download em formato MP4 | Grátis |
+
+### FAQ - Gravação
+
+**Quanto custa o recurso de gravação?**
+Oferecemos dois tipos: Gravação Composite (todos em 1 vídeo) a R$ 0,075/minuto, e Gravação Individual (1 vídeo por participante) a R$ 0,035/minuto por participante. O armazenamento é cobrado separadamente a R$ 0,010/minuto/mês, e você escolhe o período (1 a 48 meses).
+
+**Por quanto tempo as gravações ficam disponíveis?**
+Você escolhe o período de armazenamento no momento da configuração, podendo optar por 1, 3, 6, 12, 24, 36 ou 48 meses. O padrão é 1 mês caso não especifique. Após o período escolhido, as gravações são automaticamente excluídas, ou você pode renová-las.
+
+**É possível baixar as gravações?**
+Sim, todas as gravações podem ser baixadas em formato MP4 diretamente do painel de controle ou via API.
+
+**As gravações são seguras?**
+Sim, todas as gravações são criptografadas em repouso usando AES-256 e transmitidas com segurança via HTTPS. Estamos em conformidade com LGPD, HIPAA e outras regulamentações de privacidade.
+
+**É necessário notificar os participantes sobre a gravação?**
+Sim, por padrão, todos os participantes são notificados quando a gravação é iniciada. Isso está em conformidade com as leis de privacidade e consentimento.
+
+**Qual a diferença entre Gravação Composite e Individual?**
+A Gravação Composite gera um único arquivo de vídeo com todos os participantes em layout de grade, ideal para arquivamento simples e mais econômica (R$ 0,075/min total). A Gravação Individual gera um arquivo separado para cada participante, útil para edição posterior, legendagem individual ou quando você precisa dos vídeos separados (R$ 0,035/min por participante).
+
+---
+
+## FUNCIONALIDADE DETALHADA: Transcrição com IA
+
+### Visão Geral
+Transforme o áudio das suas videochamadas em texto pesquisável com nossa
+tecnologia avançada de transcrição baseada em inteligência artificial.
+Processa o áudio sem necessidade de gravar o vídeo, mantendo sua privacidade.
+
+### Benefícios da Transcrição
+
+#### Pesquisável
+Encontre rapidamente momentos específicos nas gravações através de palavras-chave.
+
+#### Multilíngue
+Suporte para português, inglês, espanhol e outros idiomas principais.
+
+#### Marcações de Tempo
+Cada trecho da transcrição inclui marcações precisas de tempo para fácil navegação.
+
+#### Exportação Flexível
+Exporte transcrições em formatos TXT, SRT, VTT ou JSON para uso em diferentes plataformas.
+
+### Como Funciona - Transcrição Automática
+
+#### 1. Configuração do Projeto
+A transcrição é configurada nas preferências do projeto da videochamada.
+Quando ativada, ela processa o áudio da chamada de forma independente,
+sem necessidade de habilitar a gravação de vídeo.
+
+#### 2. Processamento Inteligente
+Nossa IA analisa o áudio da chamada em tempo real e o converte em texto
+com alta precisão, identificando diferentes falantes e adicionando
+marcações de tempo, sem armazenar o vídeo.
+
+#### 3. Acesso e Utilização
+A transcrição fica disponível no painel de controle após o término da chamada.
+Você pode visualizar, editar, pesquisar ou exportar o texto em diferentes formatos.
+
+### Casos de Uso
+
+#### Psicologia
+Psicólogos podem transcrever sessões para análise posterior,
+documentação e acompanhamento do progresso do paciente ao longo do tempo.
+
+#### Reuniões de Negócios
+Transforme discussões importantes em documentos pesquisáveis,
+facilitando o acompanhamento de decisões e atribuições de tarefas.
+
+#### Entrevistas e Pesquisas
+Pesquisadores podem transcrever entrevistas para análise qualitativa,
+codificação e extração de insights sem o trabalho manual de transcrição.
+
+### Preços - Transcrição
+
+| Item | Preço |
+|------|-------|
+| Transcrição Básica (conversão de áudio para texto) | R$ 0,0225 por minuto |
+| Identificação de Falantes | Incluído |
+| Exportação (TXT, SRT, VTT, JSON) | Grátis |
+
+### FAQ - Transcrição
+
+**Quanto custa o recurso de transcrição?**
+A transcrição é cobrada a R$ 0,0225 por minuto de áudio transcrito.
+
+**Quais idiomas são suportados?**
+Atualmente suportamos português brasileiro, inglês, espanhol, francês e alemão. Estamos constantemente adicionando novos idiomas.
+
+**Qual é a precisão da transcrição?**
+Nossa tecnologia de IA oferece uma precisão média de 95% para português brasileiro em condições ideais de áudio. A precisão pode variar dependendo da qualidade do áudio, sotaques e terminologia específica.
+
+**É possível editar a transcrição?**
+Sim, todas as transcrições podem ser editadas manualmente através do nosso editor de texto no painel de controle.
+
+**Quanto tempo leva para transcrever uma gravação?**
+O tempo de processamento é geralmente de 1/4 do tempo da gravação. Por exemplo, uma gravação de 60 minutos levará cerca de 15 minutos para ser transcrita.
+
+---
+
+## FUNCIONALIDADE DETALHADA: Resumo Inteligente com IA
+
+### Visão Geral
+Transforme longas reuniões em resumos concisos e acionáveis com nossa
+tecnologia avançada de IA que extrai os pontos mais importantes.
+
+### Benefícios do Resumo com IA
+
+#### Economia de Tempo
+Obtenha os pontos principais de uma reunião de uma hora em apenas alguns minutos de leitura.
+
+#### Personalização
+Direcione o resumo com prompts específicos para focar no que realmente importa para você.
+
+#### Múltiplos Formatos
+Escolha entre resumos em parágrafos, tópicos ou estruturados com seções predefinidas.
+
+#### Processamento Rápido
+Resumos gerados automaticamente em uma fração do tempo da gravação original.
+
+### Como Funciona - Processo de Resumo Automático
+
+#### 1. Configuração do Projeto
+Ative o recurso de resumo nas configurações do seu projeto. Quando habilitado,
+o resumo será gerado automaticamente após a transcrição da chamada.
+
+#### 2. Personalização de Prompts
+Defina prompts personalizados para direcionar o tipo de resumo que deseja.
+Por exemplo, "Extrair decisões e próximos passos" ou "Resumir pontos principais".
+
+#### 3. Acesso e Visualização
+O resumo fica disponível junto com a transcrição no painel de controle.
+Você pode visualizar ou editar conforme necessário.
+
+### Casos de Uso
+
+#### Reuniões Executivas
+Transforme longas reuniões de diretoria em resumos concisos com
+decisões-chave, responsabilidades atribuídas e prazos definidos.
+
+#### Consultas Médicas
+Médicos podem obter resumos estruturados de teleconsultas,
+destacando sintomas, diagnósticos e planos de tratamento.
+
+#### Entrevistas de Clientes
+Equipes de produto podem extrair insights valiosos de entrevistas
+com clientes, identificando necessidades e pontos de dor.
+
+### Preços - Resumo Inteligente
+
+| Item | Preço |
+|------|-------|
+| Resumo Básico (geração a partir da transcrição) | R$ 0,020 por minuto de conteúdo |
+| Personalização (prompts específicos) | Incluído |
+| Visualização no painel de controle | Grátis |
+
+### FAQ - Resumo Inteligente
+
+**Quanto custa o recurso de resumo com IA?**
+O resumo com IA é cobrado a R$ 0,020 por minuto de conteúdo processado, independentemente do tamanho do resumo gerado.
+
+**É necessário ter a transcrição para gerar um resumo?**
+Sim, o resumo é gerado a partir da transcrição. Portanto, você precisará habilitar o recurso de transcrição antes de poder gerar um resumo. A transcrição funciona de forma independente e não requer gravação de vídeo.
+
+**Posso personalizar o tipo de resumo que quero?**
+Sim, você pode fornecer prompts específicos para direcionar o resumo. Por exemplo, você pode solicitar um resumo focado apenas nas decisões tomadas, nos próximos passos ou em pontos específicos discutidos.
+
+**Em quais formatos posso obter o resumo?**
+Oferecemos três formatos principais: parágrafo contínuo, tópicos com marcadores (bullets) e estruturado (com seções como Contexto, Pontos Principais, Decisões e Próximos Passos).
+
+**Quanto tempo leva para gerar um resumo?**
+O tempo de processamento é geralmente de 1/10 do tempo da gravação. Por exemplo, uma gravação de 60 minutos levará cerca de 6 minutos para ter seu resumo gerado.
+
+---
+
+## FUNCIONALIDADE DETALHADA: Segurança Avançada
+
+### Visão Geral
+Protegemos suas videochamadas com os mais altos padrões de segurança e privacidade,
+garantindo confidencialidade para suas comunicações mais importantes.
+
+### Recursos de Segurança
+
+#### Criptografia de Ponta a Ponta
+Todas as videochamadas são protegidas com criptografia AES-256, garantindo que apenas os participantes autorizados possam acessar o conteúdo.
+
+#### Servidores no Brasil
+Infraestrutura hospedada em território nacional, garantindo menor latência e conformidade com a legislação brasileira de proteção de dados.
+
+#### Conformidade Regulatória
+Plataforma em conformidade com LGPD, HIPAA, ISO 27001 e GDPR, atendendo aos mais rigorosos padrões internacionais de segurança.
+
+#### Auditorias de Segurança
+Realizamos auditorias regulares de segurança e testes de penetração para identificar e corrigir vulnerabilidades antes que possam ser exploradas.
+
+### Diferencial de Segurança
+
+#### Sem Participantes Adicionais
+Diferente de outras plataformas que adicionam "robôs" ou participantes extras
+para realizar gravações, nossa solução é completamente transparente. Isso garante
+maior privacidade e conforto para discussões confidenciais.
+
+#### Infraestrutura Brasileira
+Servidores localizados no Brasil garantem conformidade com a LGPD e menor latência,
+diferente de soluções internacionais que podem armazenar dados em jurisdições com
+leis de privacidade menos rigorosas.
+
+#### Controle Total de Acesso
+Você tem controle completo sobre quem pode entrar nas chamadas, acessar gravações
+e transcrições, com permissões granulares que podem ser configuradas de acordo com
+as necessidades da sua organização.
+
+### Certificações e Conformidade
+
+#### LGPD - Lei Geral de Proteção de Dados Pessoais
+Conformidade total com a legislação brasileira de proteção de dados.
+
+#### HIPAA - Health Insurance Portability and Accountability Act
+Adequado para uso em contextos de saúde que exigem conformidade com HIPAA.
+
+#### ISO 27001 - Gestão de Segurança da Informação
+Certificação internacional para gestão de segurança da informação.
+
+#### GDPR - General Data Protection Regulation
+Conformidade com a regulamentação europeia de proteção de dados.
+
+### Comparativo de Segurança
+
+| Recurso | videochamada.com.br | Plataformas Genéricas |
+|---------|---------------------|----------------------|
+| Servidores no Brasil | ✓ Sim | ✗ Geralmente não |
+| Conformidade com LGPD | ✓ Total | ✗ Limitada |
+| Gravação sem participantes adicionais | ✓ Sim | ✗ Usa "robôs" |
+| Criptografia AES-256 | ✓ Sim | Varia |
+| Suporte técnico em português | ✓ Via WhatsApp | ✗ Limitado |
+
+### FAQ - Segurança
+
+**Como a videochamada.com.br protege os dados dos usuários?**
+Utilizamos criptografia AES-256 para todas as comunicações, armazenamento seguro de dados em servidores no Brasil, autenticação de dois fatores, e seguimos as melhores práticas de segurança da indústria. Além disso, realizamos auditorias regulares e testes de penetração para garantir a integridade do nosso sistema.
+
+**As videochamadas são criptografadas?**
+Sim, todas as videochamadas são protegidas com criptografia AES-256 de ponta a ponta. Isso significa que apenas os participantes autorizados podem acessar o conteúdo da chamada, garantindo privacidade e confidencialidade.
+
+**Onde os dados são armazenados?**
+Todos os dados são armazenados em servidores localizados no Brasil, o que garante conformidade com a LGPD e menor latência para usuários brasileiros. Isso também facilita o cumprimento de requisitos legais específicos do país.
+
+**A plataforma é adequada para uso em contextos que exigem confidencialidade?**
+Sim, nossa plataforma foi projetada para atender aos requisitos de segurança e privacidade de setores sensíveis como saúde e jurídico. Estamos em conformidade com HIPAA, LGPD e outras regulamentações relevantes, tornando nossa solução adequada para teleconsultas médicas, atendimento psicológico, reuniões jurídicas confidenciais e outros contextos que exigem alto nível de segurança.
+
+**Como vocês garantem a segurança das gravações e transcrições?**
+Todas as gravações e transcrições são criptografadas em repouso e em trânsito. O acesso a esses dados é estritamente controlado por permissões baseadas em funções, e implementamos políticas de retenção de dados configuráveis para garantir que as informações sejam mantidas apenas pelo tempo necessário.
+
+---
+
+## Links do Footer
+
+### Funcionalidades
+- Gravação de Chamadas: /funcionalidades/gravacao
+- Transcrição com IA: /funcionalidades/transcricao
+- Resumo Inteligente: /funcionalidades/resumo-inteligente
+- Segurança Avançada: /funcionalidades/seguranca-avancada
+- Integração No-Code: /funcionalidades/integracao-no-code
+
+### Compare com:
+- vs. Whereby: /alternativa/whereby
+- vs. Vonage (TokBox): /alternativa/vonage
+- vs. Twilio Video: /alternativa/twilio
+- vs. VideoSDK.live: /alternativa/videosdk
+- vs. Zoom: /alternativa/zoom
+- vs. Google Meet: /alternativa/google-meet
+- vs. Microsoft Teams: /alternativa/microsoft-teams
+
+### Links Úteis
+- Preços: /precos
+- API Docs: https://documentacao.videochamada.com.br
+- Criar Conta: https://app.videochamada.com.br/cadastrar
+- Entrar: https://app.videochamada.com.br/entrar
+- Termos de Uso: /termos-de-uso
+- Política de Privacidade: /politica-de-privacidade
+
+---
+
+## Informações Técnicas
+
+### Tecnologias
+- WebRTC próprio
+- Servidores no Brasil
+- Criptografia AES-256
+- API REST: https://api.videochamada.com.br/calls
+
+### Integrações
+- Zapier: https://zapier.com/apps/videochamada/integrations
+- Make (Integromat): https://www.make.com/en/integrations/videochamada
+- API REST com exemplos em Node.js e Python
+
+### Limites
+- Até 4 participantes por chamada
+- 2.000 minutos grátis por mês no plano Free
+- Precisão de transcrição: 95% para português brasileiro
+
+### Idiomas Suportados (Transcrição)
+- Português brasileiro
+- Inglês
+- Espanhol
+- Francês
+- Alemão
+
+---
+
+## Call to Action Final
+
+Crie Sua Conta Agora Mesmo e Comece a Usar!
+
+2.000 minutos grátis para transformar suas comunicações.
+Sem cartão de crédito, sem compromissos.
+
+**Teste Grátis:** https://app.videochamada.com.br/cadastrar
+
+Junte-se a centenas de empresas que já transformaram suas videochamadas.
+
+---
+
+## Contatos
+
+- WhatsApp: +55 31 7215-6350 (https://api.whatsapp.com/send?phone=5531972156350&text=Olá!%20Preciso%20de%20ajuda)
+- Email de Suporte: Via WhatsApp
+- Site: https://videochamada.com.br
+- Documentação: https://documentacao.videochamada.com.br
+- Aplicação: https://app.videochamada.com.br
+
+© 2025 videochamada.com.br - Todos os direitos reservados.
