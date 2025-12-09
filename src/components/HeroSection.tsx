@@ -51,10 +51,10 @@ const HeroSection = () => {
                 Vamos Conversar
               </a>
               <a
-                href="#projetos"
+                href="#produtos"
                 className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 font-bold py-4 px-8 rounded-full transition-all duration-300"
               >
-                Ver Projetos
+                Ver Produtos
               </a>
             </motion.div>
 
@@ -104,11 +104,11 @@ const HeroSection = () => {
             className="md:w-1/2 flex justify-center"
           >
             <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-primary/10 rounded-full blur-xl opacity-50"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-primary/10 rounded-2xl blur-xl opacity-50"></div>
               <img
                 src="/images/IMG_4274.jpeg"
                 alt="Bernardo Gontijo"
-                className="relative w-72 h-72 md:w-96 md:h-96 object-cover rounded-full shadow-2xl"
+                className="relative w-72 h-auto md:w-96 md:h-auto object-cover rounded-2xl shadow-2xl"
               />
             </div>
           </motion.div>

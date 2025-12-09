@@ -39,7 +39,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projetos" className="py-24 bg-gray-950">
+    <section id="produtos" className="py-24 bg-gray-950">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -48,7 +48,7 @@ const ProjectsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Projetos</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Produtos</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Produtos e plataformas que desenvolvi para resolver problemas reais de comunicacao e gestao.
