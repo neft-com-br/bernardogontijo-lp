@@ -27,17 +27,24 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const navItems = [
+    { name: 'Sobre', href: '#sobre' },
+    { name: 'Projetos', href: '#projetos' },
+    { name: 'Experiencia', href: '#experiencia' },
+    { name: 'Contato', href: '#contato' },
+  ];
+
   return (
     <header
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-dark-bg/90 backdrop-blur-md shadow-md py-3'
+          ? 'bg-gray-950/90 backdrop-blur-md shadow-md py-3'
           : 'bg-transparent py-5'
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold text-white">Bernardo Gontijo</span>
+          <span className="text-xl font-bold text-white">BG</span>
         </Link>
 
         {/* Mobile menu button */}
@@ -51,34 +58,33 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
-          <Link href="/" className="text-gray-300 hover:text-primary transition-colors">
-            Home
-          </Link>
-          <Link href="/sobre" className="text-gray-300 hover:text-primary transition-colors">
-            Sobre
-          </Link>
+        <nav className="hidden md:flex items-center space-x-8">
+          {navItems.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              className="text-gray-300 hover:text-primary transition-colors"
+            >
+              {item.name}
+            </a>
+          ))}
         </nav>
       </div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-dark-bg border-t border-gray-800 animate-fade-in">
+        <div className="md:hidden bg-gray-950 border-t border-gray-800 animate-fade-in">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <Link
-              href="/"
-              className="text-gray-300 hover:text-primary py-2 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              href="/sobre"
-              className="text-gray-300 hover:text-primary py-2 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Sobre
-            </Link>
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-gray-300 hover:text-primary py-2 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ))}
           </div>
         </div>
       )}
