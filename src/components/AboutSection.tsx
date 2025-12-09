@@ -6,18 +6,18 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: <GraduationCap className="w-6 h-6" />,
-      title: "Formacao",
-      description: "Engenharia Mecanica + MBA pelo IBMEC"
+      title: "Formação",
+      description: "Engenharia Mecânica + MBA pelo IBMEC"
     },
     {
       icon: <Briefcase className="w-6 h-6" />,
-      title: "Experiencia",
+      title: "Experiência",
       description: "Startups, Embraer e empreendedorismo"
     },
     {
       icon: <Code className="w-6 h-6" />,
       title: "Especialidade",
-      description: "WebRTC e comunicacao em tempo real"
+      description: "WebRTC e comunicação em tempo real"
     },
     {
       icon: <Rocket className="w-6 h-6" />,
@@ -49,20 +49,20 @@ const AboutSection = () => {
             className="lg:w-1/2"
           >
             <p className="text-lg text-gray-300 mb-6">
-              Especialista em tecnologias de comunicacao em tempo real, fundei a <strong className="text-primary">Neft.com.br</strong> em 2019,
-              empresa responsavel pela videochamada.com.br e video-call.us.
+              Especialista em tecnologias de comunicação em tempo real, fundei a <strong className="text-primary">Neft.com.br</strong> em 2019,
+              empresa responsável pela videochamada.com.br e video-call.us.
             </p>
             <p className="text-lg text-gray-300 mb-6">
-              Com uma solida trajetoria profissional, tive passagens em startups inovadoras e empresas
-              tradicionais, incluindo uma posicao como engenheiro na <strong className="text-white">Embraer</strong>.
+              Com uma sólida trajetória profissional, tive passagens em startups inovadoras e empresas
+              tradicionais, incluindo uma posição como engenheiro na <strong className="text-white">Embraer</strong>.
             </p>
             <p className="text-lg text-gray-300 mb-6">
-              Formado em Engenharia Mecanica e com MBA pelo IBMEC, combino conhecimento tecnico
-              e visao de negocios para desenvolver solucoes que realmente atendem as necessidades do mercado.
+              Formado em Engenharia Mecânica e com MBA pelo IBMEC, combino conhecimento técnico
+              e visão de negócios para desenvolver soluções que realmente atendem às necessidades do mercado.
             </p>
             <p className="text-lg text-gray-300">
-              Minha missao e democratizar o acesso a APIs de videochamadas profissionais, oferecendo
-              solucoes com suporte local no Brasil e precos acessiveis.
+              Minha missão é democratizar o acesso a APIs de videochamadas profissionais, oferecendo
+              soluções com suporte local no Brasil e preços acessíveis.
             </p>
           </motion.div>
 

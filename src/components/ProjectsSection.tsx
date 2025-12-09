@@ -6,7 +6,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       name: "neft.com.br",
-      description: "Empresa de tecnologia focada em solucoes de comunicacao em tempo real. Desenvolve APIs e plataformas de videochamada para o mercado brasileiro e internacional.",
+      description: "Empresa de tecnologia focada em soluções de comunicação em tempo real. Desenvolve APIs e plataformas de videochamada para o mercado brasileiro e internacional.",
       url: "https://neft.com.br",
       icon: <Globe className="w-8 h-8" />,
       tags: ["Empresa", "WebRTC", "SaaS"],
@@ -14,7 +14,7 @@ const ProjectsSection = () => {
     },
     {
       name: "videochamada.com.br",
-      description: "API de videochamadas profissional para desenvolvedores. Solucao brasileira com servidores locais, precos em real e 2.000 minutos gratis por mes.",
+      description: "API de videochamadas profissional para desenvolvedores. Solução brasileira com servidores locais, preços em real e 2.000 minutos grátis por mês.",
       url: "https://videochamada.com.br",
       icon: <Video className="w-8 h-8" />,
       tags: ["API", "Video", "Brasil"],
@@ -22,7 +22,7 @@ const ProjectsSection = () => {
     },
     {
       name: "video-call.us",
-      description: "Versao internacional da plataforma de videochamadas. API de video para desenvolvedores com infraestrutura global e precos competitivos em dolar.",
+      description: "Versão internacional da plataforma de videochamadas. API de vídeo para desenvolvedores com infraestrutura global e preços competitivos em dólar.",
       url: "https://video-call.us",
       icon: <Video className="w-8 h-8" />,
       tags: ["API", "Video", "Global"],
@@ -30,7 +30,7 @@ const ProjectsSection = () => {
     },
     {
       name: "minhasmetricas.com.br",
-      description: "Plataforma de analytics e metricas para negocios. Dashboard intuitivo para acompanhar KPIs e tomar decisoes baseadas em dados.",
+      description: "Plataforma de analytics e métricas para negócios. Dashboard intuitivo para acompanhar KPIs e tomar decisões baseadas em dados.",
       url: "https://minhasmetricas.com.br",
       icon: <BarChart3 className="w-8 h-8" />,
       tags: ["Analytics", "Dashboard", "BI"],
@@ -51,7 +51,7 @@ const ProjectsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Produtos</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Produtos e plataformas que desenvolvi para resolver problemas reais de comunicacao e gestao.
+            Produtos e plataformas que desenvolvi para resolver problemas reais de comunicação e gestão.
           </p>
         </motion.div>
 

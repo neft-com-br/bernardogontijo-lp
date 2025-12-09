@@ -30,7 +30,7 @@ const Header = () => {
   const navItems = [
     { name: 'Sobre', href: '#sobre' },
     { name: 'Produtos', href: '#produtos' },
-    { name: 'Experiencia', href: '#experiencia' },
+    { name: 'Experiência', href: '#experiencia' },
     { name: 'Contato', href: '#contato' },
   ];
 
