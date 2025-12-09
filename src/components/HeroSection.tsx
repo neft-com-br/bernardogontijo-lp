@@ -35,8 +35,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-gray-300 mb-8 max-w-lg"
             >
-              Fundador da Neft.com.br. Especialista em tecnologias de comunicação
-              em tempo real e soluções WebRTC.
+              Fundador da Neft.com.br, Videochamada.com.br, Video-call.us e Minhasmetricas.com.br. Especialista em tecnologias de comunicação em tempo real e soluções WebRTC.
             </motion.p>
 
             <motion.div
