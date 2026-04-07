@@ -10,60 +10,49 @@ const Header = () => {
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
-
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   const navItems = [
     { name: 'Sobre', href: '#sobre' },
     { name: 'Produtos', href: '#produtos' },
-    { name: 'Experiência', href: '#experiencia' },
+    { name: 'Trajetória', href: '#experiencia' },
     { name: 'Contato', href: '#contato' },
   ];
 
   return (
     <header
-      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+      className={`fixed w-full top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-gray-950/90 backdrop-blur-md shadow-md py-3'
-          : 'bg-transparent py-5'
+          ? 'bg-noir-deep/95 backdrop-blur-md border-b border-noir-border py-4'
+          : 'bg-transparent py-6'
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold text-white">BG</span>
+        <Link href="/" className="group flex items-center">
+          <span className="font-display text-2xl font-semibold text-cream tracking-wide group-hover:text-gold transition-colors duration-300">
+            BG
+          </span>
+          <span className="hidden sm:inline ml-3 font-mono text-[10px] tracking-[0.25em] uppercase text-cream-muted">
+            Bernardo Gontijo
+          </span>
         </Link>
 
-        {/* Mobile menu button */}
-        <div className="flex items-center space-x-4 md:hidden">
-          <button
-            className="text-gray-300 focus:outline-none"
-            onClick={toggleMenu}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+        <button
+          className="text-cream-muted focus:outline-none md:hidden"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center gap-10">
           {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-300 hover:text-primary transition-colors"
+              className="font-mono text-[11px] tracking-[0.15em] uppercase text-cream-muted hover:text-gold transition-colors duration-300"
             >
               {item.name}
             </a>
@@ -71,15 +60,14 @@ const Header = () => {
         </nav>
       </div>
 
-      {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-gray-950 border-t border-gray-800 animate-fade-in">
-          <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+        <div className="md:hidden bg-noir-deep border-t border-noir-border animate-fade-in">
+          <div className="container mx-auto px-6 py-6 flex flex-col gap-5">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-primary py-2 transition-colors"
+                className="font-mono text-xs tracking-[0.15em] uppercase text-cream-muted hover:text-gold transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

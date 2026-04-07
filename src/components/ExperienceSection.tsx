@@ -5,62 +5,73 @@ import { Rocket, Users, GraduationCap } from 'lucide-react';
 const ExperienceSection = () => {
   const activities = [
     {
-      icon: <Rocket className="w-8 h-8" />,
-      title: "Neft.com.br",
-      subtitle: "Fundador & CEO",
-      description: "Lidero uma empresa de tecnologia focada em comunicação em tempo real. Desenvolvemos APIs de videochamada para os mercados brasileiro e internacional, atendendo desde startups até grandes empresas.",
-      color: "from-primary to-orange-500"
+      icon: <Rocket className="w-5 h-5" />,
+      title: 'Neft.com.br',
+      subtitle: 'Fundador & CEO',
+      description:
+        'Lidero uma empresa de tecnologia focada em comunicação em tempo real. Desenvolvemos APIs de videochamada e a plataforma Vix.so para os mercados brasileiro e internacional.',
     },
     {
-      icon: <Users className="w-8 h-8" />,
-      title: "CDL Jovem BH",
-      subtitle: "Vice-Presidência de Capacitação (2025-2026)",
-      description: "Coordeno a área de capacitação da CDL Jovem BH, desenvolvendo programas e iniciativas para fortalecer o empreendedorismo jovem em Belo Horizonte.",
-      color: "from-blue-500 to-cyan-500"
+      icon: <Users className="w-5 h-5" />,
+      title: 'CDL Jovem BH',
+      subtitle: 'VP de Capacitação (2025–2026)',
+      description:
+        'Coordeno a área de capacitação da CDL Jovem BH, desenvolvendo programas para fortalecer o empreendedorismo jovem em Belo Horizonte.',
     },
     {
-      icon: <GraduationCap className="w-8 h-8" />,
-      title: "Formação",
-      subtitle: "Engenharia Mecânica + MBA IBMEC",
-      description: "Base em engenharia pela formação técnica, complementada por visão de negócios pelo MBA. Antes de empreender, passei por startups e pela Embraer.",
-      color: "from-purple-500 to-pink-500"
-    }
+      icon: <GraduationCap className="w-5 h-5" />,
+      title: 'Formação',
+      subtitle: 'Eng. Mecânica + MBA IBMEC',
+      description:
+        'Base em engenharia pela formação técnica, complementada por visão de negócios pelo MBA. Antes de empreender, passei por startups e pela Embraer.',
+    },
   ];
 
   return (
-    <section id="experiencia" className="py-24 bg-gray-900">
-      <div className="container mx-auto px-6">
+    <section id="experiencia" className="py-28 md:py-36 bg-noir-surface">
+      <div className="container mx-auto px-6 max-w-6xl">
+        {/* Section label */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">O que faço hoje</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Divido meu tempo entre empreender, desenvolver produtos e contribuir com a comunidade.
-          </p>
+          <div className="flex items-center gap-4 mb-3">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-gold">
+              Trajetória
+            </span>
+            <div className="flex-1 h-px bg-noir-border" />
+          </div>
+          <h2 className="font-display text-4xl md:text-5xl font-light text-cream">
+            O que faço hoje
+          </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {activities.map((activity, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 28 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-800 rounded-2xl p-8 hover:bg-gray-750 transition-all duration-300 group"
+              className="group relative rounded-2xl border border-noir-border hover:border-gold/30 bg-noir-card/40 p-8 transition-all duration-500"
             >
-              <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${activity.color} flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform`}>
+              <div className="w-11 h-11 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6 group-hover:bg-gold/20 transition-colors duration-300">
                 {activity.icon}
               </div>
 
-              <h3 className="text-xl font-bold text-white mb-1">{activity.title}</h3>
-              <p className="text-primary text-sm font-medium mb-4">{activity.subtitle}</p>
-              <p className="text-gray-400">{activity.description}</p>
+              <h3 className="font-display text-2xl font-medium text-cream mb-1">
+                {activity.title}
+              </h3>
+              <p className="font-mono text-[11px] tracking-wider uppercase text-gold mb-5">
+                {activity.subtitle}
+              </p>
+              <p className="font-body text-sm text-cream-muted leading-relaxed">
+                {activity.description}
+              </p>
             </motion.div>
           ))}
         </div>

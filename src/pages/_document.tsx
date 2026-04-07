@@ -5,8 +5,9 @@ export default function Document() {
     <Html lang="pt-BR">
       <Head>
         <meta charSet="UTF-8" />
-        {/* Viewport meta tag should be in _app.tsx, not in _document.tsx */}
-        {/* You can add your favicon and other meta tags here */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
 
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{

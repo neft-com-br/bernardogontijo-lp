@@ -1,88 +1,86 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Video, BarChart3, Globe } from 'lucide-react';
+import { ArrowUpRight, Globe, Video, MonitorPlay } from 'lucide-react';
 
 const ProjectsSection = () => {
   const projects = [
     {
-      name: "neft.com.br",
-      description: "Empresa de tecnologia focada em soluções de comunicação em tempo real. Desenvolve APIs e plataformas de videochamada para o mercado brasileiro e internacional.",
-      url: "https://neft.com.br",
-      icon: <Globe className="w-8 h-8" />,
-      tags: ["Empresa", "WebRTC", "SaaS"],
-      color: "from-blue-500 to-cyan-500"
+      name: 'neft.com.br',
+      description:
+        'Empresa de tecnologia focada em soluções de comunicação em tempo real. APIs e plataformas de videochamada para o mercado brasileiro e internacional.',
+      url: 'https://neft.com.br',
+      icon: <Globe className="w-6 h-6" />,
+      tags: ['Empresa', 'WebRTC', 'SaaS'],
     },
     {
-      name: "videochamada.com.br",
-      description: "API de videochamadas profissional para desenvolvedores. Solução brasileira com servidores locais, preços em real e 2.000 minutos grátis por mês.",
-      url: "https://videochamada.com.br",
-      icon: <Video className="w-8 h-8" />,
-      tags: ["API", "Video", "Brasil"],
-      color: "from-primary to-orange-500"
+      name: 'videochamada.com.br',
+      description:
+        'API de videochamadas profissional para desenvolvedores. Servidores locais no Brasil, preços em real e 2.000 minutos grátis por mês.',
+      url: 'https://videochamada.com.br',
+      icon: <Video className="w-6 h-6" />,
+      tags: ['API', 'Video', 'Brasil'],
     },
     {
-      name: "video-call.us",
-      description: "Versão internacional da plataforma de videochamadas. API de vídeo para desenvolvedores com infraestrutura global e preços competitivos em dólar.",
-      url: "https://video-call.us",
-      icon: <Video className="w-8 h-8" />,
-      tags: ["API", "Video", "Global"],
-      color: "from-purple-500 to-pink-500"
+      name: 'vix.so',
+      description:
+        'Plataforma SaaS de video experience para empresas. Agendamento, videochamadas, gravação e resumos inteligentes em uma solução completa.',
+      url: 'https://vix.so',
+      icon: <MonitorPlay className="w-6 h-6" />,
+      tags: ['SaaS', 'Video', 'Experience'],
     },
-    {
-      name: "minhasmetricas.com.br",
-      description: "Plataforma de analytics e métricas para negócios. Dashboard intuitivo para acompanhar KPIs e tomar decisões baseadas em dados.",
-      url: "https://minhasmetricas.com.br",
-      icon: <BarChart3 className="w-8 h-8" />,
-      tags: ["Analytics", "Dashboard", "BI"],
-      color: "from-green-500 to-emerald-500"
-    }
   ];
 
   return (
-    <section id="produtos" className="py-24 bg-gray-950">
-      <div className="container mx-auto px-6">
+    <section id="produtos" className="py-28 md:py-36 bg-noir-deep">
+      <div className="container mx-auto px-6 max-w-6xl">
+        {/* Section label */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Produtos</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Produtos e plataformas que desenvolvi para resolver problemas reais de comunicação e gestão.
-          </p>
+          <div className="flex items-center gap-4 mb-3">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-gold">
+              Produtos
+            </span>
+            <div className="flex-1 h-px bg-noir-border" />
+          </div>
+          <h2 className="font-display text-4xl md:text-5xl font-light text-cream">
+            O que construí
+          </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <motion.a
               key={index}
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 28 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group relative bg-gray-900 rounded-2xl p-8 hover:bg-gray-800 transition-all duration-300 overflow-hidden"
+              className="group relative rounded-2xl border border-noir-border hover:border-gold/40 bg-noir-card/40 p-8 transition-all duration-500 hover:bg-noir-card"
             >
-              <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${project.color} opacity-10 rounded-full blur-2xl group-hover:opacity-20 transition-opacity`}></div>
+              {/* Glow on hover */}
+              <div className="absolute inset-0 rounded-2xl bg-gold/[0.03] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative">
-                <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${project.color} flex items-center justify-center text-white mb-6`}>
+                <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-7 group-hover:bg-gold/20 transition-colors duration-300">
                   {project.icon}
                 </div>
 
                 <div className="flex items-center gap-2 mb-3">
-                  <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">
+                  <h3 className="font-display text-2xl font-medium text-cream group-hover:text-gold transition-colors duration-300">
                     {project.name}
                   </h3>
-                  <ExternalLink className="w-4 h-4 text-gray-500 group-hover:text-primary transition-colors" />
+                  <ArrowUpRight className="w-4 h-4 text-cream-faint group-hover:text-gold group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
                 </div>
 
-                <p className="text-gray-400 mb-6">
+                <p className="font-body text-sm text-cream-muted mb-7 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -90,7 +88,7 @@ const ProjectsSection = () => {
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="text-xs px-3 py-1 bg-gray-800 text-gray-300 rounded-full"
+                      className="font-mono text-[10px] tracking-wider uppercase px-3 py-1.5 border border-noir-border rounded-full text-cream-muted group-hover:border-gold/20 transition-colors"
                     >
                       {tag}
                     </span>

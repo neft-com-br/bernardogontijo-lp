@@ -5,92 +5,95 @@ import { GraduationCap, Briefcase, Code, Rocket } from 'lucide-react';
 const AboutSection = () => {
   const highlights = [
     {
-      icon: <GraduationCap className="w-6 h-6" />,
-      title: "Formação",
-      description: "Engenharia Mecânica + MBA pelo IBMEC"
+      icon: <Rocket className="w-5 h-5" />,
+      title: 'Fundador',
+      detail: 'Neft.com.br desde 2019',
     },
     {
-      icon: <Briefcase className="w-6 h-6" />,
-      title: "Experiência",
-      description: "Startups, Embraer e empreendedorismo"
+      icon: <Code className="w-5 h-5" />,
+      title: 'Especialidade',
+      detail: 'WebRTC & tempo real',
     },
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Especialidade",
-      description: "WebRTC e comunicação em tempo real"
+      icon: <GraduationCap className="w-5 h-5" />,
+      title: 'Formação',
+      detail: 'Eng. Mecânica + MBA IBMEC',
     },
     {
-      icon: <Rocket className="w-6 h-6" />,
-      title: "Fundador",
-      description: "Neft.com.br desde 2019"
-    }
+      icon: <Briefcase className="w-5 h-5" />,
+      title: 'Trajetória',
+      detail: 'Startups, Embraer, SaaS',
+    },
   ];
 
   return (
-    <section id="sobre" className="py-24 bg-gray-900">
-      <div className="container mx-auto px-6">
+    <section id="sobre" className="py-28 md:py-36 bg-noir-surface">
+      <div className="container mx-auto px-6 max-w-6xl">
+        {/* Section label */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Sobre Mim</h2>
-          <div className="w-20 h-1 bg-primary mx-auto"></div>
+          <div className="flex items-center gap-4 mb-3">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-gold">Sobre</span>
+            <div className="flex-1 h-px bg-noir-border" />
+          </div>
+          <h2 className="font-display text-4xl md:text-5xl font-light text-cream">
+            Quem sou eu
+          </h2>
         </motion.div>
 
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-14">
+          {/* Bio text - 3 cols */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="lg:w-1/2"
+            className="lg:col-span-3 space-y-6"
           >
-            <p className="text-lg text-gray-300 mb-6">
-              Especialista em tecnologias de comunicação em tempo real, fundei a <strong className="text-primary">Neft.com.br</strong> em 2019,
-              empresa responsável pela videochamada.com.br e video-call.us.
+            <p className="text-lg text-cream/80 leading-relaxed">
+              Especialista em tecnologias de comunicação em tempo real, fundei a{' '}
+              <strong className="text-gold font-medium">Neft.com.br</strong> em 2019 —
+              empresa por trás da videochamada.com.br e da{' '}
+              <strong className="text-gold font-medium">Vix.so</strong>.
             </p>
-            <p className="text-lg text-gray-300 mb-6">
-              Com uma sólida trajetória profissional, tive passagens em startups inovadoras e empresas
-              tradicionais, incluindo uma posição como engenheiro na <strong className="text-white">Embraer</strong>.
+            <p className="text-lg text-cream/80 leading-relaxed">
+              Com passagens em startups e na <strong className="text-cream font-medium">Embraer</strong>,
+              combino formação em engenharia com visão de negócios para criar soluções que resolvem
+              problemas reais de comunicação.
             </p>
-            <p className="text-lg text-gray-300 mb-6">
-              Formado em Engenharia Mecânica e com MBA pelo IBMEC, combino conhecimento técnico
-              e visão de negócios para desenvolver soluções que realmente atendem às necessidades do mercado.
-            </p>
-            <p className="text-lg text-gray-300">
-              Minha missão é democratizar o acesso a APIs de videochamadas profissionais, oferecendo
-              soluções com suporte local no Brasil e preços acessíveis.
+            <p className="text-lg text-cream/80 leading-relaxed">
+              Formado em Engenharia Mecânica e com MBA pelo IBMEC, minha missão é democratizar
+              o acesso a ferramentas profissionais de vídeo, com infraestrutura local e preços acessíveis.
             </p>
           </motion.div>
 
+          {/* Highlights - 2 cols */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.15 }}
             viewport={{ once: true }}
-            className="lg:w-1/2"
+            className="lg:col-span-2 space-y-4"
           >
-            <div className="grid grid-cols-2 gap-6">
-              {highlights.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="bg-gray-800 rounded-xl p-6 hover:bg-gray-750 transition-colors"
-                >
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4">
-                    {item.icon}
-                  </div>
-                  <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                  <p className="text-gray-400 text-sm">{item.description}</p>
-                </motion.div>
-              ))}
-            </div>
+            {highlights.map((item, i) => (
+              <div
+                key={i}
+                className="group flex items-start gap-4 p-5 rounded-xl border border-noir-border hover:border-gold/30 bg-noir-card/50 transition-all duration-300"
+              >
+                <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-gold flex-shrink-0 group-hover:bg-gold/20 transition-colors">
+                  {item.icon}
+                </div>
+                <div>
+                  <h3 className="font-body text-sm font-semibold text-cream mb-0.5">{item.title}</h3>
+                  <p className="font-body text-sm text-cream-muted">{item.detail}</p>
+                </div>
+              </div>
+            ))}
           </motion.div>
         </div>
       </div>

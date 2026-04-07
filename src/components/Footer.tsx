@@ -4,11 +4,12 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300">
-      <div className="container mx-auto px-6 py-8">
-        <div className="text-center">
-          <p className="text-gray-500">© {new Date().getFullYear()} Bernardo Gontijo - Todos os direitos reservados.</p>
-        </div>
+    <footer className="bg-noir-deep border-t border-noir-border">
+      <div className="container mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <span className="font-display text-lg font-semibold text-cream/40">BG</span>
+        <p className="font-mono text-[10px] tracking-wider uppercase text-cream-faint">
+          &copy; {new Date().getFullYear()} Bernardo Gontijo
+        </p>
       </div>
     </footer>
   );

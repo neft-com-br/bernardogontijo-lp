@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-950 text-dark-text flex flex-col">
+    <div className="min-h-screen bg-noir-deep text-cream flex flex-col font-body">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bernardo Gontijo</title>
