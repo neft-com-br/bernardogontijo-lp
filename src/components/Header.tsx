@@ -16,10 +16,11 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Sobre', href: '#sobre' },
-    { name: 'Produtos', href: '#produtos' },
-    { name: 'Trajetória', href: '#experiencia' },
-    { name: 'Contato', href: '#contato' },
+    { name: 'Sobre', href: '/#sobre' },
+    { name: 'Produtos', href: '/#produtos' },
+    { name: 'Trajetória', href: '/#experiencia' },
+    { name: 'Consultoria de IA', href: '/consultoria/' },
+    { name: 'Contato', href: '/#contato' },
   ];
 
   return (
