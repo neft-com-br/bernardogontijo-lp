@@ -9,7 +9,7 @@ const ExperienceSection = () => {
       title: 'Neft.com.br',
       subtitle: 'Fundador & CEO',
       description:
-        'Lidero uma empresa de tecnologia focada em comunicação em tempo real. Desenvolvemos APIs de videochamada e a plataforma Vix.so para os mercados brasileiro e internacional.',
+        'Lidero uma empresa de tecnologia focada em comunicação em tempo real e IA aplicada. Desenvolvemos APIs de videochamada e produtos como o DayAndNight.ai para os mercados brasileiro e internacional.',
     },
     {
       icon: <Users className="w-5 h-5" />,

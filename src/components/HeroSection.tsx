@@ -38,7 +38,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.25 }}
               className="font-body text-lg text-cream-muted max-w-lg mb-10 mx-auto lg:mx-0 leading-relaxed"
             >
-              Fundador da Neft.com.br e Vix.so. Especialista em tecnologias de comunicação em tempo real e soluções WebRTC.
+              Fundador da Neft.com.br e criador do DayAndNight.ai. Construo produtos de IA aplicada e comunicação em tempo real.
             </motion.p>
 
             <motion.div

@@ -12,7 +12,7 @@ const AboutSection = () => {
     {
       icon: <Code className="w-5 h-5" />,
       title: 'Especialidade',
-      detail: 'WebRTC & tempo real',
+      detail: 'IA aplicada & tempo real',
     },
     {
       icon: <GraduationCap className="w-5 h-5" />,
@@ -56,10 +56,11 @@ const AboutSection = () => {
             className="lg:col-span-3 space-y-6"
           >
             <p className="text-lg text-cream/80 leading-relaxed">
-              Especialista em tecnologias de comunicação em tempo real, fundei a{' '}
-              <strong className="text-gold font-medium">Neft.com.br</strong> em 2019 —
-              empresa por trás da videochamada.com.br e da{' '}
-              <strong className="text-gold font-medium">Vix.so</strong>.
+              Fundei a <strong className="text-gold font-medium">Neft.com.br</strong> em 2019 —
+              empresa por trás da videochamada.com.br — e hoje construo produtos de IA aplicada,
+              entre eles o <strong className="text-gold font-medium">DayAndNight.ai</strong>,
+              o <strong className="text-cream font-medium">OláSUS</strong> e o{' '}
+              <strong className="text-cream font-medium">Qual Minha Origem</strong>.
             </p>
             <p className="text-lg text-cream/80 leading-relaxed">
               Com passagens em startups e na <strong className="text-cream font-medium">Embraer</strong>,

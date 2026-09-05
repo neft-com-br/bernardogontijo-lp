@@ -12,21 +12,21 @@ export default function Home() {
     <div className="min-h-screen bg-noir-deep text-cream flex flex-col">
       <Head>
         <title>Bernardo Gontijo | Empreendedor & Engenheiro de Software</title>
-        <meta name="description" content="Fundador da Neft.com.br e Vix.so. Especialista em tecnologias de comunicação em tempo real e soluções WebRTC." />
+        <meta name="description" content="Fundador da Neft.com.br e criador do DayAndNight.ai. Construo produtos de IA aplicada e comunicação em tempo real." />
         <link rel="canonical" href="https://bernardogontijo.com/" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bernardogontijo.com/" />
         <meta property="og:title" content="Bernardo Gontijo | Empreendedor & Engenheiro de Software" />
-        <meta property="og:description" content="Fundador da Neft.com.br e Vix.so. Especialista em tecnologias de comunicação em tempo real e soluções WebRTC." />
+        <meta property="og:description" content="Fundador da Neft.com.br e criador do DayAndNight.ai. Construo produtos de IA aplicada e comunicação em tempo real." />
         <meta property="og:image" content="https://bernardogontijo.com/images/IMG_4274.jpeg" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://bernardogontijo.com/" />
         <meta name="twitter:title" content="Bernardo Gontijo | Empreendedor & Engenheiro de Software" />
-        <meta name="twitter:description" content="Fundador da Neft.com.br e Vix.so. Especialista em tecnologias de comunicação em tempo real e soluções WebRTC." />
+        <meta name="twitter:description" content="Fundador da Neft.com.br e criador do DayAndNight.ai. Construo produtos de IA aplicada e comunicação em tempo real." />
         <meta name="twitter:image" content="https://bernardogontijo.com/images/IMG_4274.jpeg" />
       </Head>
       <main className="flex-grow">
