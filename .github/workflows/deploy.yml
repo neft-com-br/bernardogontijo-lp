@@ -7,14 +7,13 @@ on:
 
 env:
   AWS_REGION: sa-east-1
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
 # OPS-1648: the Ryzen publisher takes over when the repository variable
 # DEPLOY_PROVIDER_BERNARDOGONTIJO_LP is `woodpecker`; unset or `actions` keeps this workflow publishing.
+# Only `deploy` reads the variable: `build` is the CI check the publisher's gate requires on
+# every head, so it keeps running after the cutover. It never receives the AWS keys.
 jobs:
   build:
-    if: vars.DEPLOY_PROVIDER_BERNARDOGONTIJO_LP != 'woodpecker'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
